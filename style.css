@@ -1,0 +1,81 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex; 
+  /* Enables Flexbox layout */
+
+  justify-content: space-between; 
+  /* Pushes logo to left and menu to right */
+
+  align-items: center; 
+  /* Vertically centers items */
+
+  padding: 15px 30px;
+  background-color: #222;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  /* Makes nav items align in a row */
+
+  gap: 20px;
+  /* Adds space between menu items */
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.card-container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+
+  justify-content: center;
+  /* Centers cards horizontally */
+
+  gap: 20px;
+  /* Space between cards */
+
+  padding: 40px;
+}
+
+.card {
+  width: 200px;
+  height: 120px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+
+  display: flex;
+  /* Enables centering inside card */
+
+  justify-content: center;
+  /* Centers text horizontally */
+
+  align-items: center;
+  /* Centers text vertically */
+
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    
+  }
+
+  .nav-links {
+    flex-direction: column;
+ 
+    align-items: center;
+  }
+}
